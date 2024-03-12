@@ -1,0 +1,50 @@
+<!-- Code by incredible_prog -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        
+        <h3 class="form-heading">Bill total</h3>
+        
+        <div id="billContainer">
+            <label for="bill-form">$</label>
+            <input onkeyup="calculate()" id="bill-form" placeholder="0.00">
+        </div>
+
+        <h3 class="form-heading">Tip</h3>
+
+        <div id="tipContainer">
+            <label for="tip-form">%</label>
+            <input onkeyup="calculate()" id="tip-form" placeholder="10">
+        </div>
+
+
+        <div id="peopleTotal">
+            <div id="peopleContainer">
+                <h3>People</h3>
+                <button id="increaseBtn" onclick="increase()" class="peopleBtn">+</button>
+                <span id="people">1</span>
+                <button onclick="decrease()" class="peopleBtn" id="decreaseBtn">-</button>
+            </div>
+    
+            <div id="totalPerPerson">
+                <h3>Total Per Person</h3>
+                <span id="total">$0.00</span>
+            </div>
+        </div>
+        
+
+    </div>
+        
+
+    <script src="index.js"></script>
+</body>
+</html>
